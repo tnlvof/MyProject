@@ -1,0 +1,13 @@
+package 연산자;
+
+public class 증감연산자테스트 {
+
+	public static void main(String[] args) {
+		int num = 20;
+		
+		System.out.println(num);
+		System.out.println(num++);
+		System.out.println(num);
+	}
+
+}

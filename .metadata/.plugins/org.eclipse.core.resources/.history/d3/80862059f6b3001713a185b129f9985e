@@ -1,0 +1,10 @@
+package var_test;
+
+public class VTest {
+
+	public static void main(String[] args) {
+		VarTest var = new VarTest();
+		System.out.println(var);
+	}
+
+}

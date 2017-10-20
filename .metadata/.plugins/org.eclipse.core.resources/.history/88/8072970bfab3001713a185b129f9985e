@@ -1,0 +1,18 @@
+package keyboard.test;
+
+import java.util.Scanner;
+
+public class keyboardTest {
+
+	public void input() {
+		String name;
+		int age;
+		char gender;
+		String address;
+		double height;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("이름을 입력하세요 : ");
+		name = sc.nextLine();
+	}
+}

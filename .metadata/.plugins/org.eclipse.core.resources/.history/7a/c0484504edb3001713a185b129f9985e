@@ -1,0 +1,13 @@
+package myFirstProject;
+
+public class variableTest {
+
+	public static void main(String[] args) {
+		boolean booleantest;
+		char chartest;
+		int age = 10;
+		
+		System.out.println(age);
+	}
+
+}

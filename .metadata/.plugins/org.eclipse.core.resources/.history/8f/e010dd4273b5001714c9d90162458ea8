@@ -1,0 +1,21 @@
+package 연습문제;
+
+public class test2 {
+
+	public static void main(String[] args) {
+		int a = 100;
+		int b = 200;
+		int c = 100;
+		int d=250;
+		System.out.println(a<b);
+		System.out.println(c<d);
+		
+		String str1 = "안녕하세요";
+		String str2 = "반갑습니다";
+		new String str3 = "안녕하세요";
+		
+		System.out.println(str1 == str2);
+		System.out.println(str1 == str3);
+	}
+
+}

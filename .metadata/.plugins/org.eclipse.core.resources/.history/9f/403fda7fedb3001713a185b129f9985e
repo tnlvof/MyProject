@@ -1,0 +1,17 @@
+package myFirstProject;
+
+public class variableTest {
+
+	public static void main(String[] args) {
+		boolean booleantest;
+		char chartest;
+		short snum = 100;
+		int inum = 10000;
+		long lnum = 1000000;
+		
+		int age = 10;
+		
+		System.out.println(age);
+	}
+
+}
