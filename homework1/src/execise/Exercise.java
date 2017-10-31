@@ -6,42 +6,42 @@ public class Exercise {
 	Scanner sc = new Scanner(System.in);
 
 	public void exercise1() {
-		System.out.println("1~10 »çÀÌÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("1~10 ì‚¬ì´ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 		int num1 = sc.nextInt();
 		if (num1 >= 1 && num1 <= 10) {
-			System.out.println(num1 % 2 == 0 ? "Â¦¼ö" : "È¦¼ö");
+			System.out.println(num1 % 2 == 0 ? "ì§ìˆ˜" : "í™€ìˆ˜");
 
 		} else {
-			System.out.println("¹İµå½Ã 1~10 »çÀÌÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù.");
+			System.out.println("ë°˜ë“œì‹œ 1~10 ì‚¬ì´ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤.");
 		}
 	}
 
 	public void exercise2() {
-		System.out.println("Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä(m) : ");
+		System.out.println("í‚¤ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		double height = sc.nextDouble();
-		System.out.println("¸ö¹«°Ô¸¦ ÀÔ·ÂÇÏ¼¼¿ä(kg) : ");
+		System.out.println("ëª¸ë¬´ê²Œë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int weight = sc.nextInt();
 
-		double bmi = weight / (height * height);
+		double bmi = weight / ((height * 0.01) * (height * 0.01));
 		System.out.println("BMI : " + bmi);
 
 		if (bmi >= 30) {
-			System.out.println("ºñ¸¸ÀÔ´Ï´Ù.");
+			System.out.println("ë¹„ë§Œì…ë‹ˆë‹¤.");
 		} else if (bmi >= 25) {
-			System.out.println("°úÃ¼ÁßÀÔ´Ï´Ù.");
+			System.out.println("ê³¼ì²´ì¤‘ì…ë‹ˆë‹¤.");
 		} else if (bmi >= 20) {
-			System.out.println("Á¤»óÃ¼ÁßÀÔ´Ï´Ù.");
+			System.out.println("ì •ìƒì²´ì¤‘ì…ë‹ˆë‹¤.");
 		} else {
-			System.out.println("ÀúÃ¼ÁßÀÔ´Ï´Ù.");
+			System.out.println("ì €ì²´ì¤‘ì…ë‹ˆë‹¤.");
 		}
 
 	}
 
 	public void exercise3() {
-		System.out.println("µÎ °³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ë‘ ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		int num2 = sc.nextInt();
 		int num3 = sc.nextInt();
-		System.out.println("¿¬»êÀÚ (+, -, *, /, %) Áß ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì—°ì‚°ì (+, -, *, /, %) ì¤‘ í•˜ë‚˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		sc.nextLine();
 		String st1 = sc.next();
 
@@ -56,68 +56,68 @@ public class Exercise {
 		} else if (st1.equals("%")) {
 			System.out.println(num2 + st1 + num3 + " : " + (num2 % num3));
 		} else {
-			System.out.println("ÀÔ·ÂÇÏ½Å ¿¬»êÀº ¾ø½À´Ï´Ù.");
-			System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+			System.out.println("ì…ë ¥í•˜ì‹  ì—°ì‚°ì€ ì—†ìŠµë‹ˆë‹¤.");
+			System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 		}
 	}
 
 	public void exercise4() {
-		System.out.println("(»ç°ú ¹Ù³ª³ª º¹¼ş¾Æ Å°À§) Áß ÇÏ³ª¸¦ °í¸£½Ã¿À");
+		System.out.println("(ì‚¬ê³¼ ë°”ë‚˜ë‚˜ ë³µìˆ­ì•„ í‚¤ìœ„) ì¤‘ í•˜ë‚˜ë¥¼ ê³ ë¥´ì‹œì˜¤");
 		String st2 = sc.nextLine();
 
 		switch (st2) {
-		case "»ç°ú":
-			System.out.println("»ç°úÀÇ °¡°İÀº 1000¿øÀÔ´Ï´Ù.");
+		case "ì‚¬ê³¼":
+			System.out.println("ì‚¬ê³¼ì˜ ê°€ê²©ì€ 1000ì›ì…ë‹ˆë‹¤.");
 			break;
-		case "¹Ù³ª³ª":
-			System.out.println("¹Ù³ª³ªÀÇ °¡°İÀº 3000¿øÀÔ´Ï´Ù.");
+		case "ë°”ë‚˜ë‚˜":
+			System.out.println("ë°”ë‚˜ë‚˜ì˜ ê°€ê²©ì€ 3000ì›ì…ë‹ˆë‹¤.");
 			break;
-		case "º¹¼ş¾Æ":
-			System.out.println("º¹¼ş¾ÆÀÇ °¡°İÀº 2000¿øÀÔ´Ï´Ù.");
+		case "ë³µìˆ­ì•„":
+			System.out.println("ë³µìˆ­ì•„ì˜ ê°€ê²©ì€ 2000ì›ì…ë‹ˆë‹¤.");
 			break;
-		case "Å°À§":
-			System.out.println("Å°À§ÀÇ °¡°İÀº 5000¿øÀÔ´Ï´Ù.");
+		case "í‚¤ìœ„":
+			System.out.println("í‚¤ìœ„ì˜ ê°€ê²©ì€ 5000ì›ì…ë‹ˆë‹¤.");
 			break;
 		default:
-			System.out.println("¹İµå½Ã À§ÀÇ °úÀÏ Áß ÇÏ³ª¸¦ °í¸£¼¼¿ä.");
+			System.out.println("ë°˜ë“œì‹œ ìœ„ì˜ ê³¼ì¼ ì¤‘ í•˜ë‚˜ë¥¼ ê³ ë¥´ì„¸ìš”.");
 		}
 
 	}
 
 	public void exercise5() {
-		System.out.println("±¹¾î ¿µ¾î ¼öÇĞ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
-		System.out.println("±¹¾î : ");
+		System.out.println("êµ­ì–´ ì˜ì–´ ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
+		System.out.println("êµ­ì–´ : ");
 		int kor = sc.nextInt();
-		System.out.println("¿µ¾î : ");
+		System.out.println("ì˜ì–´ : ");
 		int eng = sc.nextInt();
-		System.out.println("¼öÇĞ : ");
+		System.out.println("ìˆ˜í•™ : ");
 		int mat = sc.nextInt();
 		
 		double avg = (kor + eng + mat) / 3;
 		
 		if(avg >= 60) {
 			if(kor < 40) {
-				System.out.println("±¹¾î °ú¸ñÀÇ Á¡¼ö ¹Ì´Ş·Î ºÒÇÕ°İÀÔ´Ï´Ù.");
+				System.out.println("êµ­ì–´ ê³¼ëª©ì˜ ì ìˆ˜ ë¯¸ë‹¬ë¡œ ë¶ˆí•©ê²©ì…ë‹ˆë‹¤.");
 			}else if(eng <40) {
-				System.out.println("¿µ¾î °ú¸ñÀÇ Á¡¼ö ¹Ì´Ş·Î ºÒÇÕ°İÀÔ´Ï´Ù.");
+				System.out.println("ì˜ì–´ ê³¼ëª©ì˜ ì ìˆ˜ ë¯¸ë‹¬ë¡œ ë¶ˆí•©ê²©ì…ë‹ˆë‹¤.");
 			}else if(mat <40){
-				System.out.println("¼öÇĞ °ú¸ñÀÇ Á¡¼ö ¹Ì´Ş·Î ºÒÇÕ°İÀÔ´Ï´Ù.");
+				System.out.println("ìˆ˜í•™ ê³¼ëª©ì˜ ì ìˆ˜ ë¯¸ë‹¬ë¡œ ë¶ˆí•©ê²©ì…ë‹ˆë‹¤.");
 			}else {
-				System.out.println("Æò±Õ : " + avg);
-				System.out.println("ÇÕ°İÀÔ´Ï´Ù.");
+				System.out.println("í‰ê·  : " + avg);
+				System.out.println("í•©ê²©ì…ë‹ˆë‹¤.");
 			}
 		}else {
-			System.out.println("Æò±Õ : " + avg);
-			System.out.println("Æò±ÕÁ¡¼ö ¹Ì´Ş·Î ºÒÇÕ°İÀÔ´Ï´Ù.");
+			System.out.println("í‰ê·  : " + avg);
+			System.out.println("í‰ê· ì ìˆ˜ ë¯¸ë‹¬ë¡œ ë¶ˆí•©ê²©ì…ë‹ˆë‹¤.");
 		}
 	}
 	public void exercise6() {
-		System.out.println("¿ù ±Ş¿© ÀÔ·Â : ");
+		System.out.println("ì›” ê¸‰ì—¬ ì…ë ¥ : ");
 		long sal = sc.nextLong();
-		System.out.println("¸ÅÃâ¾× ÀÔ·Â : ");
+		System.out.println("ë§¤ì¶œì•¡ ì…ë ¥ : ");
 		long sales = sc.nextLong();
 		System.out.println("========================");
-		System.out.println("¸ÅÃâ¾× : "+sales);
+		System.out.println("ë§¤ì¶œì•¡ : "+sales);
 		double bonusPer;
 		if(sales >= 50000000) {
 			bonusPer = 5;
@@ -129,12 +129,12 @@ public class Exercise {
 			bonusPer =0;
 		}
 		double bonus = sales *(bonusPer * 0.01);
-		System.out.println("º¸³Ê½ºÀ² : "+ bonusPer);
-		System.out.println("¿ù ±Ş¿© : " + sal);
-		System.out.println("º¸³Ê½º ±İ¾× : " + (long)bonus);
+		System.out.println("ë³´ë„ˆìŠ¤ìœ¨ : "+ bonusPer);
+		System.out.println("ì›” ê¸‰ì—¬ : " + sal + "%");
+		System.out.println("ë³´ë„ˆìŠ¤ ê¸ˆì•¡ : " + (long)bonus);
 		long totalSal = (long)bonus + sal;
 		System.out.println("========================");
-		System.out.println("ÃÑ ±Ş¿© : " +  totalSal);
+		System.out.println("ì´ ê¸‰ì—¬ : " +  totalSal);
 		
 	}
 }
