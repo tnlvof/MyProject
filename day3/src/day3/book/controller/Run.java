@@ -10,5 +10,6 @@ public class Run {
 		
 		book.information();
 		book2.information();
+		System.out.println("깃허브 재밌당");
 	}
 }
